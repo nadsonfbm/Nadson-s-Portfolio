@@ -5,144 +5,96 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://kit.fontawesome.com/90d23de173.js" crossorigin="anonymous"></script>
         <title>Nadson Mendes - Personal Portfolio</title>
         <script src="script.js" defer></script>
     </head>
     <header>
-        <h1>Nadson Mendes - Software Engineer - Portfolio</h1>
-        <nav>
+        <nav class="nav-left">
             <ul>
                 <li><a href="#about"><span class="menu-item-icon"></span>About</a></li>
-                <li><a href="#skills"><span class="menu-item-icon"></span>Skills</a></li>
-                <li><a href="#experience"><span class="menu-item-icon"></span>Experience</a></li>
-                <li><a href="#education"><span class="menu-item-icon"></span>Education</a></li>
-                <li><a href="#certificates"><span class="menu-item-icon"></span>Certificates</a></li>
-                <li><a href="#social-media"><span class="menu-item-icon"></span>Social Media</a></li>
                 <li><a href="#resume"><span class="menu-item-icon"></span>Resume</a></li>
                 <li><a href="#contact"><span class="menu-item-icon"></span>Contact</a></li>
+            </ul>
+        </nav>
+        <h1>
+            <a href="index.html"><span class="home">Home</span></a>
+            <p>Nadson Mendes</p>
+            <p>Software Engineer</p>
+        </h1>
+        <nav class="nav-right">
+            <ul>
+                <li><a href="./pages/education.html"><span class="menu-item-icon"></span>Education</a></li>
+                <li><a href="./pages/experiences.html"><span class="menu-item-icon"></span>Experience</a></li>
+                <li><a href="./pages/certificates.html"><span class="menu-item-icon"></span>Certificates</a></li>
             </ul>
         </nav>
     </header>         
     <body>
         <main>
             <section id="about">
-                <h2>About</h2>
+                <h2>About Me</h2>
                 <p>I am a software engineer with a passion for building innovative and user-friendly applications. I have experience in web development, mobile and desktop applications, and a strong desire to expand my skills and knowledge.</p>
             </section>
-
-            <section id="skills">
-                <h2>Skills</h2>
-                <p>I highlight here my ability to learn anything quickly, good interpersonal skills, respect for hierarchies and a family culture that made me an extremely polite and respectful person.</p>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Node.js</li>
-                    <li>Express</li>
-                    <li>MongoDB</li>
-                    <li>SQL</li>
-                    <li>Java</li>
-                    <li>Android Development</li>
-                </ul>
-            </section>           
-            
-            <section id="contact">
-                <h2>Contact</h2>
-                <form action="submit-form.php" method="post">
-                  <label for="name">Name:</label>
-                  <input type="text" id="name" name="name" required>
-                  <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" required>
-                  <label for="message">Message:</label>
-                  <textarea id="message" name="message" required></textarea>
-                  <input type="submit" value="Submit">
-                </form>
-            </section>
-
             <section id="resume">
                 <h2>Resume</h2>
                 <p>Insert your resume or CV here, in a format that can be easily downloaded or printed.</p>
                 <p>You could include a brief summary of your experience and qualifications, followed by a detailed list of your education, work experience, and any other relevant information.</p>
                 <p>Make sure your resume is well-formatted and easy to read, with plenty of white space and clear headings.</p>
             </section>
-
-            <section id="social-media">
-                <h2>Social Media</h2>
-                <ul class="social-media-list">
-                    <li>
-                        <a href="https://www.linkedin.com/in/yourprofile/" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                        <span>LinkedIn</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.github.com/yourusername/" target="_blank">
-                        <i class="fab fa-github"></i>
-                        <span>GitHub</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.twitter.com/yourusername/" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                        <span>Twitter</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/yourusername/" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                        <span>Instagram</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/yourusername/" target="_blank">
-                        <i class="fab fa-facebook"></i>
-                        <span>Facebook</span>
-                        </a>
-                    </li>
-                </ul>
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <div class="contact-left">
+                    <img src="" alt="background">
+                </div>
+                <div class="contact-right">
+                    <form action="submit-form.php" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
             </section>
-
         </main>
     </body>
     <footer>
-        <section id="social-media">
+        <section id="footer-left">
             <h2>Social Media</h2>
-            <ul class="social-media-list">
+            <ul class="social-media">
                 <li>
-                    <a href="https://www.linkedin.com/in/yourprofile/" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                        <span>LinkedIn</span>
+                    <a href="https://www.linkedin.com/in/nadson-mendes/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.github.com/yourusername/" target="_blank">
-                        <i class="fab fa-github"></i>
-                        <span>GitHub</span>
+                    <a href="https://www.github.com/nadsonfbm/" target="_blank">
+                        <i class="fa-brands fa-github"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.twitter.com/yourusername/" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                        <span>Twitter</span>
+                    <a href="https://www.twitter.com/nadsonfbm/" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/yourusername/" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                        <span>Instagram</span>
+                    <a href="https://www.instagram.com/nadsonfbm/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.facebook.com/yourusername/" target="_blank">
-                        <i class="fab fa-facebook"></i>
-                        <span>Facebook</span>
+                    <a href="https://www.facebook.com/nadsonfanckin/" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
                     </a>
                 </li>
             </ul>
         </section>
-        <div class="old-footer">
-            <p>&copy; 2023, Nadson Mendes Portfolio. All rights reserved.</p>
-        </div>
+        <section id="footer-right">
+            <p>Nadson Mendes Portfolio.</p>
+            <p>All rights reserved &copy; 2023</p>
+        </section>
     </footer>
 </html>
