@@ -171,9 +171,9 @@ section p {
   margin-top: 2rem;
 }
 
-  #certificates {
-    background-color: rgb(0, 34, 128);
-  }
+#certificates {
+  background-color: rgb(0, 34, 128);
+}
 
 .certificate {
   margin-bottom: 2rem;
@@ -196,33 +196,43 @@ section p {
   line-height: 1.5;
 }
 
-/* Social media styles */
-
-.social-media-list {
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-}
-
-.social-media-list li {
-  margin-right: 1rem;
-}
-
-.social-media-list a {
-  color: #000;
-  text-decoration: none;
-}
-
-.social-media-list i {
-  font-size: 1.5rem;
-  margin-right: 0.5rem;
-}
-
-/* Footer styles */
-
 footer {
-  text-align: center;
-  background-color: #f6f6f6;
-  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  }
+  
+  #social-media {
+  margin-right: 50px;
+  }
+  
+  .social-media-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  }
+  
+  .social-media-list li {
+  margin-bottom: 10px;
+  }
+  
+  .social-media-list li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  }
+  
+  .social-media-list li a i {
+  margin-right: 10px;
   font-size: 1.2rem;
-}
+  }
+  
+  .old-footer {
+  text-align: right;
+  }
