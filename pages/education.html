@@ -1,36 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title></title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
         <script src="https://kit.fontawesome.com/90d23de173.js" crossorigin="anonymous"></script>
-        <title>Nadson Mendes - Education</title>
+        <title>Nadson Mendes - Personal Portfolio</title>
+        <script src="../script.js" defer></script>
     </head>
-    <header>
-        <nav class="nav-left">
-            <ul>
-                <li><a href="#about"><span class="menu-item-icon"></span>About</a></li>
-                <li><a href="#resume"><span class="menu-item-icon"></span>Resume</a></li>
-                <li><a href="#contact"><span class="menu-item-icon"></span>Contact</a></li>
-            </ul>
-        </nav>
-        <h1>
-            <a href="index.html"><span class="home">Home</span></a>
-            <p>Nadson Mendes</p>
-            <p>Software Engineer</p>
-        </h1>
-        <nav class="nav-right">
-            <ul>
-                <li><a href=""><span class="menu-item-icon"></span>Experience</a></li>
-                <li><a href="#education"><span class="menu-item-icon"></span>Education</a></li>
-                <li><a href="#certificates"><span class="menu-item-icon"></span>Certificates</a></li>
-            </ul>
-        </nav>
-    </header>
     <body>
+        <header>
+            <div class="header-home">
+                <div class="links">
+                    <a href="index.html">
+                        <span class="fa fa-house menu-item-icon"></span>
+                        <span class="menu-item-text">Home</span>
+                    </a>
+                </div>
+            </div>
+            <div class="header-title">
+                <h1>Nadson Mendes</h1>
+                <h2>Software Engineer</h2>
+            </div>
+            <div class="header-nav-left">
+                <div class="links">
+                    <a href="../index.html">
+                        <span class="fa fa-user menu-item-icon"></span>
+                        <span class="menu-item-text">About</span>
+                    </a>
+                    <a href="resume.html">
+                        <span class="fa fa-file-text menu-item-icon"></span>
+                        <span class="menu-item-text">Resume</span>
+                    </a>
+                    <a href="contact.html">
+                        <span class="fa fa-envelope menu-item-icon"></span>
+                        <span class="menu-item-text">Contact</span>
+                    </a>
+              </div>
+            </div>
+            <div class="header-nav-right">
+                <div class="links">
+                    <a href="education.html">
+                        <span class="fa fa-graduation-cap menu-item-icon"></span>
+                        <span class="menu-item-text">Education</span>
+                    </a>
+                    <a href="experiences.html">
+                        <span class="fa fa-briefcase menu-item-icon"></span>
+                        <span class="menu-item-text">Experiences</span>
+                    </a>
+                    <a href="certificates.html">
+                        <span class="fa fa-certificate menu-item-icon"></span>
+                        <span class="menu-item-text">Certificates</span>
+                    </a>
+                </div>
+            </div>
+        </header>
         <main>
             <section id="education">
                 <h2>Education</h2>
@@ -103,43 +129,38 @@
         </main>
     </body>
     <footer>
-        <section id="social-media">
-            <h2>Social Media</h2>
-            <ul class="social-media-list">
+        <section id="footer-left">
+            <p>Social Media</p>
+            <ul class="social-media">
                 <li>
-                    <a href="https://www.linkedin.com/in/yourprofile/" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                        <span>LinkedIn</span>
+                    <a href="https://www.linkedin.com/in/nadson-mendes/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.github.com/yourusername/" target="_blank">
-                        <i class="fab fa-github"></i>
-                        <span>GitHub</span>
+                    <a href="https://www.github.com/nadsonfbm/" target="_blank">
+                        <i class="fa-brands fa-github"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.twitter.com/yourusername/" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                        <span>Twitter</span>
+                    <a href="https://www.twitter.com/nadsonfbm/" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/yourusername/" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                        <span>Instagram</span>
+                    <a href="https://www.instagram.com/nadsonfbm/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.facebook.com/yourusername/" target="_blank">
-                        <i class="fab fa-facebook"></i>
-                        <span>Facebook</span>
+                    <a href="https://www.facebook.com/nadsonfanckin/" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
                     </a>
                 </li>
             </ul>
         </section>
-        <div class="old-footer">
-            <p>&copy; 2023, Nadson Mendes Portfolio. All rights reserved.</p>
-        </div>
+        <section id="footer-right">
+            <p>Nadson Mendes Portfolio. All rights reserved &copy; 2023</p>
+        </section>
     </footer>
 </html>

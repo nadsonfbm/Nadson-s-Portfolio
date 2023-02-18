@@ -1,23 +1,244 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans";
 }
 
-#contact {
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr 3fr;
+  grid-template-rows: 1fr;
+  box-shadow: 5px 9px 15px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to left, #06412f, #0ca778);
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+}
+
+.header-title {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "h1"
+    "h2";
+  align-items: center;
+  justify-content: center;
+}
+
+.header-title h1 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: white;
+  text-shadow: #000000 0px 0px 10px;
+}
+
+.header-title h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: #000000 0px 0px 10px;
+}
+
+.header-home,
+.header-nav-left,
+.header-nav-right {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.header-home,
+.header-nav-right,
+.header-nav-left {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.header-home,
+.header-title,
+.header-nav-left,
+.header-nav-right {
+  margin: 10px;
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  padding: 5px;
+  border: 10px;
+  margin: 10px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.links a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: #10d89c;
+  border-radius: 30px;
+}
+
+.menu-item-icon {
+  margin-right: 2px;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    grid-template-areas:
+      "header-home"
+      "header-nav-left"
+      "header-nav-right";
+      position: fixed;
+  }
+  .header-title {
+    display: none;
+  }
+  .links a {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header-title h1 {
+    font-size: 1rem;
+  }
+  .header-title h2 {
+    font-size: 0.8rem;
+  }
+  .links a {
+    font-size: 0.8rem;
+  }
+}
+
+
+#about {
+  background-color: #03553c;
+  padding: 50px;
+}
+
+.about-container {
   display: flex;
-  background-color: aquamarine;
+  align-items: center;
 }
 
-.contact-left {
+.image-container {
   flex: 1;
-  height: 300px;
-  background-image: url("path/to/placeholder-image.jpg");
-  background-size: cover;
-  background-position: center;
+  margin-right: 50px;
 }
 
-.contact-right {
-  flex: 1;
-  padding: 0 20px;
+img {
+  width: 80%;
+}
+
+.text-container {
+  flex: 2;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #222;
+  color: #fff;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "footer-left footer-right";
+  font-size: 24px;
+  padding: 16px;
+}
+
+#footer-left {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "h2 ul";
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.social-media {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);;  
+}
+
+.social-media li {
+  margin-left: 20px;
+}
+
+.social-media a {
+  color: #fff;
+}
+
+#footer-right p {
+  display: grid;
+}
+
+#footer-right p:first-of-type {
+  margin: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    grid-template-areas:
+      "footer-left"
+      "footer-right";
+    text-align: center;
+    justify-items: center;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  footer {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    grid-template-areas:
+      "footer-left"
+      "footer-right";
+    text-align: center;
+    justify-items: center;
+    font-size: 16px;
+  }
 }
