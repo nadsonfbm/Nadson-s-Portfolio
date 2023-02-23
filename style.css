@@ -214,7 +214,7 @@ header {
   color: #555;
 }
 
-@media (max-width: 768px) {  /* For tablets */
+@media (max-width: 768px) {
   .about-container {
     grid-template-columns: 1fr;
     margin-top: 20%;
@@ -242,7 +242,7 @@ header {
   }
 }
 
-@media (max-width: 480px) {  /* For smartphones */
+@media (max-width: 480px) {
   .about-container {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
